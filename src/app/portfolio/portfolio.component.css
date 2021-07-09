@@ -1,5 +1,5 @@
  .Isabel{
-    text-align: center;
+    text-align: right;
     margin-left:2%;
     float:left; 
     height:40px;
@@ -18,20 +18,20 @@ body{
     font-size: 20px;
 }
 .Isabel img{
-    height: 270px; 
+    height: 250px; 
 }
 
 .iconDetails {
     margin-left:2%;
-   float:left; 
-   height:90px;
-   width:90px; 
+   float: left; 
+   height:200px;
    } 
-   
+  /* The .container height is the space between pics*/ 
    .container2 {
        width:100%;
-       height:auto;
+       height: 300px;
        padding:1%;
-   }
+       text-align: center;
+    }
 
 
