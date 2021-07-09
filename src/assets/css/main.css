@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+
+/*
 html,
 body {
     height: 100%;
@@ -16,17 +18,25 @@ body {
     font-family: 'Marvel', sans-serif;
     color: rgb(38, 100, 100);
 }
+*/
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    /*changed from space-around;*/
     align-items: center;
     min-height: 8vh;
     font-family: 'Marvel', sans-serif;
-    /*font-family: 'Poppins', sans-serif;*/
     background-color: black;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: 25px;
+}
+
+.spacer {
+    width: 100px;
+    /*take out?
+    color: black;
+    */
 }
 
 .logo {
@@ -36,13 +46,15 @@ nav {
     display: flex;
     align-items: center;
     font-size: 20px;
-    margin: 10px;
+    margin: 5px;
+    /*changed from 10px;*/
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 30%;
+    /*margin-top: 20px;*/
 }
 
 .nav-links li {
@@ -54,7 +66,8 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 30px;
+    /*changed from 22px;*/
 }
 
 .burger {
@@ -105,7 +118,7 @@ nav a:hover {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 140vh;
         top: 8vh;
         background: black;
         display: flex;
@@ -178,24 +191,48 @@ body {
     /*background: #101010;*/
     padding: 0;
     margin: 0;
-    background-color: #101010;
+    /*background-color: #101010;*/
+    /*background: #101010;*/
+    /*background: linear-gradient(180deg, #000 0%, rgba(25, 79, 79) 80%, rgba(38, 100, 100)) 100%;*/
     font-family: 'Marvel', sans-serif;
     font-size: 1.2rem;
+    /*try 19.2px*/
     min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    color: rgb(38, 100, 100);
+    /*add?
+    display: block;
+    margin: 8px;
+    height: 100vh;
+    width: 100%;
+    */
+    /*maybe not?
+    height: 800px;
+    width: 1400px;
+    */
 }
 
+
+/*
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
     margin-top: 20px;
 }
+*/
 
 .full-height-grow {
     display: flex;
     flex-direction: column;
+    /* maybe not
+    height: 150vh;
+    */
 }
 
+
+/*
 .title {
     font-weight: 500;
     font-size: 3em;
@@ -223,6 +260,8 @@ body {
     text-decoration: none;
     font-size: .9rem;
 }
+
+*/
 
 
 /*
@@ -254,15 +293,11 @@ hr.light-100 {
 
 */
 
-hr {
-    width: 300px;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: 15vh;
     flex-direction: column;
     background: #1b1a1a;
     position: relative;
@@ -284,4 +319,198 @@ footer .container .sec {
     margin-right: 30px;
 }
 
-footer .container .sec.aboutUs {}
+footer .container .sec.aboutUs {
+    width: 40%;
+}
+
+footer .container h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    ;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p {
+    color: #999;
+    /*added*/
+    margin: 10px;
+}
+
+.sci {
+    /*maybe not?
+    margin-top: 20px;
+    */
+    /*added this line*/
+    margin: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: rgb(125, 37, 37);
+}
+
+.sci li a .fa {
+    color: rgb(38, 100, 100);
+    font-size: 20px;
+}
+
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover {
+    color: #fff;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: center;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #fff;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    footer .footer-container {
+        flex-direction: column;
+    }
+    footer .footer-container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .footer-container .sec.aboutUs,
+    .quickLinks,
+    .contact {
+        width: 100%;
+    }
+    .copyrightText {
+        padding: 8px 40px;
+    }
+}
+
+.confidential h2,
+.spoiler h2,
+.caution h2 {
+    color: rgb(125, 37, 37);
+    text-align: center;
+}
+
+.confidential p,
+.spoiler p,
+.caution p {
+    text-align: center;
+}
+
+.confidential li,
+.spoiler li,
+.caution li {
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.confidential ul,
+.spoiler ul,
+.caution ul {
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+}
+
+.confidential a,
+.spoiler a,
+.caution a {
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+    align-items: center;
+}
+
+.confidential a:hover,
+.spoiler a:hover,
+.caution a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(125, 37, 37);
+}
