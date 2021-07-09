@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Marvel</title>
+    <title>Marvel | Home</title>
+    <!-- Clickable -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <!-- Not working -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <!-- Fonts -->
-    <!-- Icon -->
-    <!-- Slicknav -->
-    <!-- Menu CSS -->
-    <!-- Slider CSS -->
-    <!-- Nivo Lightbox -->
-    <!-- Animate -->
     <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/landing.css">
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/main.css">
+    <!-- Home Style -->
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/landing.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -28,179 +26,363 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body class="full-height-grow">
-    <!-- Nav Starts Here -->
-    <nav>
-        <div class="logo">
-            <img src="assets/img/logo.png">
-            <div class="logo">S.H.I.E.L.D.</div>
+<body>
+    <div class="full-height-grow" style="width: 100%;">
+        <!--Added style-->
+        <!-- Nav Starts Here -->
+        <nav>
+            <div class="logo">
+                <img src="/src/assets/img/logo.png">
+                <div class="logo">S.H.I.E.L.D.</div>
+                <div class="spacer"></div>
+                <!-- took this out <h4 class="spacer">SOMETHING</h4>-->
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="captainAmerica.html">Captain America</a>
+                </li>
+                <li>
+                    <a href="ironMan.html">Iron Man</a>
+                </li>
+                <li>
+                    <a href="thor.html">Thor</a>
+                </li>
+                <li>
+                    <a href="hulk.html">Hulk</a>
+                </li>
+                <li>
+                    <a href="blackWidow.html">Black Widow</a>
+                </li>
+                <li>
+                    <a href="hawkeye.html">Hawkeye</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!-- Nav Ends Here -->
+
+        <!--Took this out and moved under head <body> -->
+        <div class="body">
+
+            <div class="main">
+                <!-- Body Starts Here -->
+                <!-- Took these out <br>
+            <br>-->
+                <h1>Get to Know the Avengers</h1>
+                <hr style="width: 28%; margin: 0 auto;">
+                <h3>Earth's Mightiest Heroes</h3>
+                <!-- Took this one out <br> -->
+                <br>
+                <br>
+                <!-- Character Main Cards Start Here -->
+
+                <div class="landingContainer">
+
+                    <img id="landingImages1" src="/src/assets/img/captainAmericaAction.png" alt="Captain America Action" width="30%" height="100%">
+                    <img id="landingImages2" src="/src/assets/img/ironManAction.jpeg" alt="Iron Man Action">
+                    <img id="landingImages3" src="/src/assets/img/thorAction.png" alt="Thor Action">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="landingContainer">
+                    <img src="/src/assets/img/hulkAction.png" alt="Hulk Action" id="landingImages4">
+                    <img src="/src/assets/img/blackWidowAction.jpeg" alt="Black Widow Action" id="landingImages5">
+                    <img src="/src/assets/img/hawkeyeAction.png" alt="Hawkeye Action" id="landingImages6">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- Took these out <br>
+            <br>
+            <br> -->
+            </div>
+            <!-- Character Main Cards End Here -->
+
         </div>
 
-        <ul class="nav-links">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="captainAmerica.html">Captain America</a>
-            </li>
-            <li>
-                <a href="ironMan.html">Iron Man</a>
-            </li>
-            <li>
-                <a href="thor.html">Thor</a>
-            </li>
-            <li>
-                <a href="hulk.html">Hulk</a>
-            </li>
-            <li>
-                <a href="blackWidow.html">Black Widow</a>
-            </li>
-            <li>
-                <a href="hawkeye.html">Hawkeye</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    <!-- Nav Ends Here -->
+        <!-- Circle Decorations Start Here -->
+        <!-- They're ugly asf
 
-    <!-- Body Starts Here -->
+        <div class="home-page-circle-1"></div>
+        <div class="home-page-circle-2"></div>
+        <div class="home-page-circle-3"></div>
+        -->
 
-    <br>
-    <br>
-    <h1>Get to Know the Avengers</h1>
-    <hr>
-    <h3>Earth's Mightiest Heroes</h3>
-    <br>
-    <br>
-    <br>
-    <div class="landingContainer">
+        <!-- Circle Decorations End Here -->
 
-        <img id="landingImages1" src="/assets/img/captainAmericaAction.png" alt="Captain America Action" width="30%" height="100%">
-        <img id="landingImages2" src="/assets/img/ironManAction.jpeg" alt="Iron Man Action">
-        <img id="landingImages3" src="/assets/img/thorAction.png" alt="Thor Action">
+        <!-- JS Link -->
+        <script type="text/javascript" src="/src/assets/js/app.js"></script>
+        <!--Added this but ?? Take out? maybe? It said Code Injected by life-server -->
+        <!--
+    <script type="text/jacvascript">
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+          var address = protocol + window.location.host + window.location.pathname + '/ws';
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == 'reload') window.location.reload();
+            else if (msg.data == 'refreshcss') refreshCSS();
+          };
+          if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+            console.log('Live reload enabled.');
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+          }
+        })();
+      }
+      else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+    </script>
+  -->
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="landingContainer">
-        <img src="/assets/img/hulkAction.png" alt="Hulk Action" id="landingImages4">
-        <img src="/assets/img/blackWidowAction.png" alt="Black Widow Action" id="landingImages5">
-        <img src="/assets/img/hawkeyeAction.png" alt="Hawkeye Action" id="landingImages6">
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Character info starts here -->
+    <main class="grid">
+        <section class="content item1">
+            <h1>Hover Card Animation</h1>
+            <p>By animating a few CSS paint & composite properties, we can create fun interactions on hover & focus</p>
+        </section>
+        <section class="card item2">
+            <h2>Hover the cards
+                <h2>
+        </section>
+        <section class="card item3"></section>
+        <section class="card item4"></section>
+        <section class="card item5">
+            <h2>because interactions make it more fun
+                <h2>
+        </section>
+        <section class="card item7"></section>
+        <section class="card item8">
+            <h2>animating the shadow on the pseudo element makes it pop out
+                <h2>
+        </section>
+        <section class="card item9"></section>
+        <section class="card item10"></section>
+        <section class="card item11">
+            <h2>add a :focus state too!
+                <h2>
+        </section>
+    </main>
+    <!-- Footer Starts Here -->
 
-
-
-    <div class="home-page-circle-1"></div>
-    <div class="home-page-circle-2"></div>
-    <div class="home-page-circle-3"></div>
-
-
-
-    <script type="text/javascript" src="app.js"></script>
-</body>
-
-<footer>
-    <!---
-    <div class="container-fluid padding"></div>
-    <div class="row text-center">
-        <div class="col-md-4">
-            <img src="/assets/img/logo.png" alt="">
-            <hr class="light">
-            <p>555-555-555</p>
-            <p>email@myemail.com</p>
-            <p>100 Street Name</p>
-            <p>City, State, 32259</p>
-        </div>
-        <div class="col-md-4">
-            <hr class="light">
-            <h5>Service Area</h5>
-            <hr class="light">
-            <p>Monday: 9AM - 5PM</p>
-            <p>Saturday: 10AM -4PM </p>
-            <p>Sundau: closed</p>
-        </div>
-        <div class="col-md-4">
-            <hr class="light">
-            <h5>Our Hours</h5>
-            <hr class="light">
-            <p>City, State, 32259</p>
-            <p>City, State, 32259</p>
-            <p>City, State, 32259</p>
-            <p>City, State, 32259</p>
-        </div>
-        <div class="col-12">
-            <hr class="light-100">
-            <h5>&copy; w3newbie.com</h5>
-        </div>
-    </div>
-    -->
-    <!--
-    <div class="main-footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#">
-                            About US
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#" class="social-link">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">Facebook</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <footer style="width: 100%; height: 350px;">
+        <!--Added style-->
+        <!---
+<div class="container-fluid padding"></div>
+<div class="row text-center">
+  <div class="col-md-4">
+      <img src="/assets/img/logo.png" alt="">
+      <hr class="light">
+      <p>555-555-555</p>
+      <p>email@myemail.com</p>
+      <p>100 Street Name</p>
+      <p>City, State, 32259</p>
+  </div>
+  <div class="col-md-4">
+      <hr class="light">
+      <h5>Service Area</h5>
+      <hr class="light">
+      <p>Monday: 9AM - 5PM</p>
+      <p>Saturday: 10AM -4PM </p>
+      <p>y: closed</p>
+  </div>
+  <div class="col-md-4">
+      <hr class="light">
+      <h5>Our Hours</h5>
+      <hr class="light">
+      <p>City, State, 32259</p>
+      <p>City, State, 32259</p>
+      <p>City, State, 32259</p>
+      <p>City, State, 32259</p>
+  </div>
+  <div class="col-12">
+      <hr class="light-100">
+      <h5>&copy; w3newbie.com</h5>
+  </div>
+</div>
 -->
-    <div class="footer-container">
-        <div class="sec aboutUs">
-            <h2>About Us</h2>
-            <p>Something Something Marvel Yee</p>
+        <!--
+<div class="main-footer">
+  <div class="container">
+      <nav class="footer-nav">
+          <ul>
+              <li>
+                  <a href="#">
+                      About US
+                  </a>
+              </li>
+              <li>
+                  <a href="#">Contact Us</a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="footer-nav">
+          <ul>
+              <li>
+                  <a href="#" class="social-link">Twitter</a>
+              </li>
+              <li>
+                  <a href="#" class="social-link">Facebook</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+</div>
+-->
+        <div class="footer-container" style="width: 1200px; height: 300px;">
+            <!-- Added style -->
+            <!-- About Us
+      <div class="sec aboutUs">
+          <h2>! ! ! PROCEED WITH CAUTION ! ! !</h2>
+          <h2>About Us</h2>
+          <p>Something Something Marvel Yee Yee</p>
+          <ul class="sci">
+              <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                  <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              </li>
+          </ul>
+      </div>
+      -->
+            <div class="confidential">
+                <h2><u>!!!CONFIDENTIAL INFORMATION!!!</u></h2>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <p>Ashley H <br>
+                            <a href="mailto:ashley.hernandez@citi.com">ashley.hernandez@citi.com</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Isabel L<br>
+                            <a href="mailto:isabel.liu@citi.com">isabel.liu@citi.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Quick Links
+      <div class="sec quickLinks">
+          <h2>Quick Links</h2>
+          <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      -->
+            <div class="spoiler">
+                <h2><u>!!!SPOILERS ARE IMMINENT!!!</u></h2>
+                <h3>About Us</h3>
+                <p>Welcome to our Avengers database! <br>Here you'll find information about the main <i>movie</i> avengers <br> Please enjoy!</p>
+                <h3>References</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <a href="https://www.marvel.com/disneyplus" target="_blank">Disney</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact Info
+      <div class="sec contact ">
+          <h2>Contact Info</h2>
+          <ul class="info ">
+              <li>
+                  <span><i class="fa fa-map-marker " aria-hidden="true "></i>
+              </span>
+                  <span>123 Street
+                <br>Jax, Fl 12345,
+                <br>US
+              </span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone " aria-hidden="true "></i>
+            </span>
+                  <p>
+                      <a href="tel:19042407130 ">+1 (904) 123-4567</a>
+                      <br>
+                      <a href="tel.11234567890 ">+1 (123) 456-7890</a>
+
+                  </p>
+              </li>
+              <li>
+                  <span><i class="fa fa-envelope " aria-hidden="true "></i>
+          </span>
+                  <p>
+                      <a href="mailto:amarqueztavera@yahoo.com ">email@domain.com</a>
+                  </p>
+              </li>
+          </ul>
+      </div>
+      -->
+            <div class="caution ">
+                <h2><u>!!!PROCEED WITH CAUTION!!!</u></h2>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <p>Bee W<br>
+                            <a href="mailto:abigail.wilson@citi.com">abigail.wilson@citi.com</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Andrea M<br>
+                            <a href="mailto:andrea.marqueztavera@citi.com">andrea.marqueztavera@citi.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="sci">
-            <li>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-            </li>
-        </ul>
+    </footer>
+    <div class="copyrightText ">
+        <p>Thank You from Citi</p>
     </div>
-</footer>
+    <!-- Footer Ends Here -->
+</body>
 
 </html>

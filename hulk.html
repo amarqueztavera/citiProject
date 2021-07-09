@@ -6,22 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Marvel</title>
-
-    <!-- Bootstrap CSS -->
+    <title>Marvel | Home</title>
+    <!-- Clickable -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <!-- Not working -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/main.css">
+    <!-- Home Style -->
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/landing.css">
     <!-- Fonts -->
-    <!-- Icon -->
-    <!-- Slicknav -->
-    <!-- Menu CSS -->
-    <!-- Slider CSS -->
-    <!-- Nivo Lightbox -->
-    <!-- Animate -->
-    <!-- Main Style 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    -->
-    <link rel="stylesheet" type="text/css" href="assets/css/hulk.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -30,136 +26,287 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<!--
-<header id="header-wrap">
--->
-<!-- Navbar Start -->
-<!--
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-        -->
-<!-- Brand and toggle get grouped for better mobile display -->
-<!--
-            <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle Navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="icon-menu"></span>
-            <span class="icon-menu"></span>
-            <span class="icon-menu"></span>
-        </button>
-                <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a>
+<body>
+    <div class="full-height-grow" style="width: 100%;">
+        <!--Added style-->
+        <!-- Nav Starts Here -->
+        <nav>
+            <div class="logo">
+                <img src="/src/assets/img/logo.png">
+                <div class="logo">S.H.I.E.L.D.</div>
+                <div class="spacer"></div>
+                <!-- took this out <h4 class="spacer">SOMETHING</h4>-->
             </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-                    <li class="nav-item active">
-                        <a href="#hero-area" class="nav-link">
-                            Home 
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="captainAmerica.html">Captain America</a>
+                </li>
+                <li>
+                    <a href="ironMan.html">Iron Man</a>
+                </li>
+                <li>
+                    <a href="thor.html">Thor</a>
+                </li>
+                <li>
+                    <a href="hulk.html">Hulk</a>
+                </li>
+                <li>
+                    <a href="blackWidow.html">Black Widow</a>
+                </li>
+                <li>
+                    <a href="hawkeye.html">Hawkeye</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!-- Nav Ends Here -->
+
+    </div>
+
+    <!-- Circle Decorations Start Here -->
+    <!-- They're ugly asf
+
+        <div class="home-page-circle-1"></div>
+        <div class="home-page-circle-2"></div>
+        <div class="home-page-circle-3"></div>
+        -->
+
+    <!-- Circle Decorations End Here -->
+
+    <!-- JS Link -->
+    <script type="text/javascript" src="/src/assets/js/app.js"></script>
+    <!--Added this but ?? Take out? maybe? It said Code Injected by life-server -->
+    <!--
+    <script type="text/jacvascript">
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+          var address = protocol + window.location.host + window.location.pathname + '/ws';
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == 'reload') window.location.reload();
+            else if (msg.data == 'refreshcss') refreshCSS();
+          };
+          if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+            console.log('Live reload enabled.');
+            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+          }
+        })();
+      }
+      else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+    </script>
+  -->
+
+
+    <!-- Footer Starts Here -->
+    <footer style="width: 100%; height: 350px;">
+        <!--Added style-->
+        <!---
+    <div class="container-fluid padding"></div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="/assets/img/logo.png" alt="">
+            <hr class="light">
+            <p>555-555-555</p>
+            <p>email@myemail.com</p>
+            <p>100 Street Name</p>
+            <p>City, State, 32259</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5>Service Area</h5>
+            <hr class="light">
+            <p>Monday: 9AM - 5PM</p>
+            <p>Saturday: 10AM -4PM </p>
+            <p>y: closed</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5>Our Hours</h5>
+            <hr class="light">
+            <p>City, State, 32259</p>
+            <p>City, State, 32259</p>
+            <p>City, State, 32259</p>
+            <p>City, State, 32259</p>
+        </div>
+        <div class="col-12">
+            <hr class="light-100">
+            <h5>&copy; w3newbie.com</h5>
+        </div>
+    </div>
+    -->
+        <!--
+    <div class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            About US
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#CaptainAmerica" class="nav-link">
-                            Captain America
-                        </a>
+                    <li>
+                        <a href="#">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#IronMan" class="nav-link">
-                            Iron Man
-                        </a>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="social-link">Twitter</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#Thor" class="nav-link">
-                            Thor
-                        </a>
+                    <li>
+                        <a href="#" class="social-link">Facebook</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#Hulk" class="nav-link">
-                            Hulk
-                        </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+-->
+        <div class="footer-container" style="width: 1200px; height: 300px;">
+            <!-- Added style -->
+            <!-- About Us
+            <div class="sec aboutUs">
+                <h2>! ! ! PROCEED WITH CAUTION ! ! !</h2>
+                <h2>About Us</h2>
+                <p>Something Something Marvel Yee Yee</p>
+                <ul class="sci">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#BlackWidow" class="nav-link">
-                            Black Widow
-                        </a>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#Hawkeye" class="nav-link">
-                            Hawkeye
-                        </a>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            -->
+            <div class="confidential">
+                <h2>!!! CONFIDENTIAL INFORMATION !!!</h2>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <p>Ashley H <br>
+                            <a href="tel:19046798625">+1 (904) 679-8625</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Isabel L<br>
+                            <a href="tel:19046540715">+1 (904) 654-0715</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Quick Links
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            -->
+            <div class="spoiler">
+                <h2><u>!!!SPOILERS ARE IMMINENT!!!</u></h2>
+                <h3>About Us</h3>
+                <p>Welcome to our Avengers database! <br>Here you'll find information about the main <i>movie</i> avengers <br> Please enjoy!</p>
+                <h3>References</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <a href="https://www.marvel.com/disneyplus" target="_blank">Disney</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact Info
+            <div class="sec contact ">
+                <h2>Contact Info</h2>
+                <ul class="info ">
+                    <li>
+                        <span><i class="fa fa-map-marker " aria-hidden="true "></i>
+                    </span>
+                        <span>123 Street
+                      <br>Jax, Fl 12345,
+                      <br>US
+                    </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone " aria-hidden="true "></i>
+                  </span>
+                        <p>
+                            <a href="tel:19042407130 ">+1 (904) 123-4567</a>
+                            <br>
+                            <a href="tel.11234567890 ">+1 (123) 456-7890</a>
+
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope " aria-hidden="true "></i>
+                </span>
+                        <p>
+                            <a href="mailto:amarqueztavera@yahoo.com ">email@domain.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            -->
+            <div class="caution ">
+                <h2>!!! PROCEED WITH CAUTION !!!</h2>
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>
+                        <p>Abby W<br>
+                            <a href="tel:19043429546 ">+1 (904) 342-9546</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Andrea M<br>
+                            <a href="tel:19042407130 ">+1 (904) 240-7130</a>
+                        </p>
                     </li>
                 </ul>
             </div>
         </div>
-        -->
-
-<!-- Mobile Menu Start -->
-<!--
-<ul class="onepage-new mobile-menu">
-    <li>
-        <a href="#CaptainAmerica">Captain America</a>
-    </li>
-    <li>
-        <a href="#IronMan">Iron Man</a>
-    </li>
-    <li>
-        <a href="#Thor">Thor</a>
-    </li>
-    <li>
-        <a href="#Hulk">Hulk</a>
-    </li>
-    <li>
-        <a href="#BlackWidow">Black Widow</a>
-    </li>
-    <li>
-        <a href="#Hawkeye">Hawkeye</a>
-    </li>
-</ul>
--->
-<!-- Mobile Menu End -->
-<!--
-</nav>
--->
-<!-- Navbar End -->
-
-
-<!-- Hero Area Start -->
-
-<!--
-</header>
--->
-
-<body>
-    <!-- Nav Starts Here -->
-    <nav>
-        <div class="logo">
-            <h4>The Nav</h4>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="captainAmerica.html">Captain America</a>
-            </li>
-            <li>
-                <a href="ironMan.html">Iron Man</a>
-            </li>
-            <li>
-                <a href="thor.html">Thor</a>
-            </li>
-            <li>
-                <a href="hulk.html">Hulk</a>
-            </li>
-            <li>
-                <a href="blackWidow.html">Black Widow</a>
-            </li>
-            <li>
-                <a href="hawkeye.html">Hawkeye</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    <script type="text/javascript" src="app.js"></script>
+    </footer>
+    <div class="copyrightText ">
+        <p>Thank You from Citi</p>
+    </div>
+    <!-- Footer Ends Here -->
 </body>
 
 </html>
