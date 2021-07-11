@@ -358,6 +358,10 @@ footer h2 {
     font-size: 28px;
 }
 
+footer a {
+    font-size: 20px;
+}
+
 .sci {
     /*maybe not?
     margin-top: 20px;
