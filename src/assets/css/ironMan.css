@@ -215,7 +215,7 @@ input[type=text]:focus {
 .main-container {
     font-family: 'Ubuntu', sans-serif;
     width: 950px;
-    height: 1000px;
+    height: 1040px;
     margin: 3em auto;
 }
 
@@ -341,7 +341,7 @@ input[type=text]:focus {
 }
 
 .tweets {
-    height: 390px;
+    height: 430px;
 }
 
 .tweets .titular {
@@ -359,7 +359,7 @@ input[type=text]:focus {
 }
 
 .tweet.second {
-    height: 100px;
+    height: 110px;
     border-bottom: 1px solid #1f253d;
 }
 
