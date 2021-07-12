@@ -25,7 +25,7 @@ const navSlide = () => {
 
 navSlide();
 
-//links from landing to profiles
+//links from pictures
 
 $("#landingImages1").click(function() {
     window.location.href = 'captainAmerica.html';
@@ -49,4 +49,8 @@ $("#landingImages5").click(function() {
 
 $("#landingImages6").click(function() {
     window.location.href = 'hawkeye.html';
+});
+
+$("#navImage").click(function() {
+    window.location.href = 'index.html';
 });

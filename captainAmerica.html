@@ -6,17 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Marvel | Home</title>
+    <title>Marvel | Captain America</title>
     <!-- Clickable -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Icons -->
-    <!-- Not working -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="/src/assets/css/main.css">
     <!-- Home Style -->
-    <link rel="stylesheet" type="text/css" href="/src/assets/css/landing.css">
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/captainAmerica.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +28,10 @@
         <!-- Nav Starts Here -->
         <nav>
             <div class="logo">
-                <img src="/src/assets/img/logo.png">
-                <div class="logo">S.H.I.E.L.D.</div>
+                <img id="navImage" src="/src/assets/img/logo.png" alt="Shield Logo" style="cursor: pointer">
+                <div class="logo"> S.H.I.E.L.D.</div>
                 <div class="spacer"></div>
-                <!-- took this out <h4 class="spacer">SOMETHING</h4>-->
+                <div class="spacer"></div>
             </div>
 
             <ul class="nav-links">
@@ -68,245 +64,236 @@
             </div>
         </nav>
         <!-- Nav Ends Here -->
+        <!-- Body Starts Here-->
 
+        <body>
+            <div class="main-container">
+                <!-- LEFT-CONTAINER -->
+                <div class="left-container container">
+                    <div class="menu-box block">
+                        <!-- SHIELD BOX (LEFT-CONTAINER) -->
+                        <h2 class="titular">S.H.I.E.L.D. FILES</h2>
+                        <ul class="menu-box-menu">
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/characters/captain-america-steve-rogers" target="_blank"><span class="icon entypo-monitor scnd-font-color"></span>Movies<div class="menu-box-number">9</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/captain-america-the-first-avenger" target="_blank" style="font-size: 11px;"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Captain America: The First Avenger<div class="menu-box-number">'11</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/the-avengers" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>The Avengers<div class="menu-box-number">'12</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/captain-america-the-winter-soldier" target="_blank" style="font-size: 11px;"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Captain America: The Winter Soldier<div class="menu-box-number">'14</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/avengers-age-of-ultron" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Avengers: Age of Ultron<div class="menu-box-number">'15</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/captain-america-civil-war" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Captain America: Civil War<div class="menu-box-number">'16</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/spider-man-homecoming" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Spider-Man: Homecoming<div class="menu-box-number">'17</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/avengers-infinity-war" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Avengers: Infinity War<div class="menu-box-number">'18</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/captain-marvel" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Captain Marvel<div class="menu-box-number">'19</div></a>
+                            </li>
+                            <li>
+                                <a class="menu-box-tab" href="https://www.marvel.com/movies/avengers-endgame" target="_blank"><span class="icon fontawesome-chevron-right scnd-font-color"></span>Avengers: Endgame<div class="menu-box-number">'19</div></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="donut-chart-block block">
+                        <!-- APPEARANCE BLOCK (LEFT-CONTAINER) -->
+                        <h2 class="titular">APPEARANCE</h2>
+                        <div class="donut-chart">
+                            <p style="text-align: center; margin-top: 30px; margin-bottom: 20px;">Height: 6'2"<br><br> Weight: 220 Ibs<br><br> Hair: Blonde<br><br> Eyes: Blue<br><br></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIDDLE-CONTAINER -->
+                <div class="middle-container container">
+                    <div class="profile block"><br>
+                        <div class="profile-picture big-profile-picture clear">
+                            <img width="150px" alt="Captain America Picture" src="/src/assets/img/captainAmericaProfile.png">
+                        </div>
+                        <h1 class="user-name">Captain America</h1>
+                        <div class="profile-description">
+                            <p class="scnd-font-color">Steven Grant Rogers</p>
+                        </div>
+                    </div>
+                    <div class="weather block clear">
+                        <h2 class="titular">Traits</h2>
+                        <br>
+                        <p style="text-align: center; margin-top: 20px;">Speed<br><br>Stamina<br><br>Skilled Fighter<br><br>Acrobat<br><br>Vibranium Shield</p>
+                    </div>
+                    <div class="tweets block">
+                        <!-- TWEETS (MIDDLE-CONTAINER) -->
+                        <h2 class="titular"><span class="icon zocial-twitter"></span>Famous Quotes</h2>
+                        <div class="tweet first">
+                            <p>I can do this all day <a class="tweet-link" href="https://twitter.com/chrisevans?s=21" target="_blank">@ChrisEvans</a></p>
+                            <p><a class="time-ago scnd-font-color" href="https://www.marvel.com/movies/captain-america-the-first-avenger" target="_blank">Captain America: The First Avenger</a><br><a class="time-ago scnd-font-color" href="https://www.marvel.com/movies/captain-america-civil-war"
+                                    target="_blank">Captain America: Civil War</a><br><a class="time-ago scnd-font-color" href="https://www.marvel.com/movies/avengers-endgame" target="_blank">Avengers: Endgame</a></p>
+                        </div>
+                        <div class="tweet second">
+                            <p>On your left <a class="tweet-link" href="https://twitter.com/chrisevans?s=21" target="_blank">@ChrisEvans</a></p>
+                            <p><a class="scnd-font-color" href="https://www.marvel.com/movies/captain-america-the-winter-soldier">Captain America: Winter Soldier</a></p>
+                        </div>
+                        <div class="tweet">
+                            <p>Language <a class="tweet-link" href="https://twitter.com/chrisevans?s=21" target="_blank">@ChrisEvans</a></p>
+                            <p><a class="scnd-font-color" href="https://www.marvel.com/movies/avengers-age-of-ultron" target="_blank">Avengers: Age of Ultron</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT-CONTAINER -->
+                <div class="right-container container">
+                    <div class="join-newsletter block">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193747.65855244102!2d-74.08542513020954!3d40.64515894781291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY!5e0!3m2!1sen!2sus!4v1626021879226!5m2!1sen!2sus"
+                            width="auto" height="230" style="border:0;" loading="lazy"></iframe>
+                    </div>
+                    <div class="loading block">
+                        <div id="media-display">
+                            <iframe width="auto" height="216" src="https://www.youtube.com/embed/qXPOl6EjbWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                    <div class="calendar-month block">
+                        <!-- CALENDAR MONTH (RIGHT-CONTAINER) -->
+                        <div class="arrow-btn-container">
+                            <h2 class="titular">DOB: July 1918</h2>
+                        </div>
+                        <table class="calendar">
+                            <thead class="days-week">
+                                <tr>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>R</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="scnd-font-color" href="https://calendar.google.com/calendar/u/0/r/day/1918/7/1" target="_blank">1</a></td>
+                                    <td><a class="scnd-font-color" href="https://calendar.google.com/calendar/u/0/r/day/1918/7/2" target="_blank">2</a></td>
+                                    <td><a class="scnd-font-color" href="https://calendar.google.com/calendar/u/0/r/day/1918/7/3" target="_blank">3</a></td>
+                                    <td><a class="today" href="https://calendar.google.com/calendar/u/0/r/day/1918/7/4" target="_blank">4</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/5" target="_blank">5</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/6" target="_blank">6</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/7" target="_blank">7</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/8" target="_blank">8</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/9" target="_blank">9</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/10" target="_blank">10</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/11" target="_blank">11</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/12" target="_blank">12</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/13" target="_blank">13</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/14" target="_blank">14</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/15" target="_blank">15</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/16" target="_blank">16</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/17" target="_blank">17</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/18" target="_blank">18</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/19" target="_blank">19</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/20" target="_blank">20</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/21" target="_blank">21</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/22" target="_blank">22</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/23" target="_blank">23</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/24" target="_blank">24</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/25" target="_blank">25</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/26" target="_blank">26</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/27" target="_blank">27</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/28" target="_blank">28</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/29" target="_blank">29</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/30" target="_blank">30</a></td>
+                                    <td><a href="https://calendar.google.com/calendar/u/0/r/day/1918/7/31" target="_blank">31</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- end right-container -->
+            </div>
+            <!-- end main-container -->
+        </body>
+
+
+        <!-- JS Link -->
+        <script type="text/javascript" src="/src/assets/js/app.js"></script>
+
+
+        <!-- Footer Starts Here -->
+
+        <footer style="width: 100%; height: 350px;">
+
+            <div class="footer-container" style="width: 1200px; height: 300px;">
+                <div class="confidential">
+                    <h2><u>CONFIDENTIAL INFORMATION</u></h2>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <p>Ashley H <br>
+                                <a href="mailto:ashley.hernandez@citi.com ">ashley.hernandez@citi.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Isabel L<br>
+                                <a href="mailto:isabel.liu@citi.com ">isabel.liu@citi.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="spoiler ">
+                    <h2><u>SPOILERS ARE IMMINENT</u></h2>
+                    <h3>About Us</h3>
+                    <p>Welcome to our Avengers database! <br>Here you'll find information about the main <i>movie</i> avengers <br> Please enjoy!</p>
+                    <h3>References</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://www.marvel.com/disneyplus " target="_blank ">Disney</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="caution ">
+                    <h2><u>PROCEED WITH CAUTION</u></h2>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <p>Bee W<br>
+                                <a href="mailto:abigail.wilson@citi.com ">abigail.wilson@citi.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Andrea M<br>
+                                <a href="mailto:andrea.marqueztavera@citi.com ">andrea.marqueztavera@citi.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrightText ">
+            <p style="color: #999; ">
+                <a href="src/app/portfolio/portfolio.component.html" target="_blank">Meet the Creators</a> - <a href="https://www.citi.com" target="_blank">Thank You from Citi</a></p>
+        </div>
+        <!-- Footer Ends Here -->
     </div>
-
-    <!-- Circle Decorations Start Here -->
-    <!-- They're ugly asf
-
-        <div class="home-page-circle-1"></div>
-        <div class="home-page-circle-2"></div>
-        <div class="home-page-circle-3"></div>
-        -->
-
-    <!-- Circle Decorations End Here -->
-
-    <!-- JS Link -->
-    <script type="text/javascript" src="/src/assets/js/app.js"></script>
-    <!--Added this but ?? Take out? maybe? It said Code Injected by life-server -->
-    <!--
-    <script type="text/jacvascript">
-      // <![CDATA[  <-- For SVG support
-      if ('WebSocket' in window) {
-        (function () {
-          function refreshCSS() {
-            var sheets = [].slice.call(document.getElementsByTagName("link"));
-            var head = document.getElementsByTagName("head")[0];
-            for (var i = 0; i < sheets.length; ++i) {
-              var elem = sheets[i];
-              var parent = elem.parentElement || head;
-              parent.removeChild(elem);
-              var rel = elem.rel;
-              if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-              }
-              parent.appendChild(elem);
-            }
-          }
-          var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-          var address = protocol + window.location.host + window.location.pathname + '/ws';
-          var socket = new WebSocket(address);
-          socket.onmessage = function (msg) {
-            if (msg.data == 'reload') window.location.reload();
-            else if (msg.data == 'refreshcss') refreshCSS();
-          };
-          if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-            console.log('Live reload enabled.');
-            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-          }
-        })();
-      }
-      else {
-        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-      }
-      // ]]>
-    </script>
-  -->
-
-
-    <!-- Footer Starts Here -->
-    <footer style="width: 100%; height: 350px;">
-        <!--Added style-->
-        <!---
-    <div class="container-fluid padding"></div>
-    <div class="row text-center">
-        <div class="col-md-4">
-            <img src="/assets/img/logo.png" alt="">
-            <hr class="light">
-            <p>555-555-555</p>
-            <p>email@myemail.com</p>
-            <p>100 Street Name</p>
-            <p>City, State, 32259</p>
-        </div>
-        <div class="col-md-4">
-            <hr class="light">
-            <h5>Service Area</h5>
-            <hr class="light">
-            <p>Monday: 9AM - 5PM</p>
-            <p>Saturday: 10AM -4PM </p>
-            <p>y: closed</p>
-        </div>
-        <div class="col-md-4">
-            <hr class="light">
-            <h5>Our Hours</h5>
-            <hr class="light">
-            <p>City, State, 32259</p>
-            <p>City, State, 32259</p>
-            <p>City, State, 32259</p>
-            <p>City, State, 32259</p>
-        </div>
-        <div class="col-12">
-            <hr class="light-100">
-            <h5>&copy; w3newbie.com</h5>
-        </div>
-    </div>
-    -->
-        <!--
-    <div class="main-footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#">
-                            About US
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#" class="social-link">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">Facebook</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
--->
-        <div class="footer-container" style="width: 1200px; height: 300px;">
-            <!-- Added style -->
-            <!-- About Us
-            <div class="sec aboutUs">
-                <h2>! ! ! PROCEED WITH CAUTION ! ! !</h2>
-                <h2>About Us</h2>
-                <p>Something Something Marvel Yee Yee</p>
-                <ul class="sci">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-            -->
-            <div class="confidential">
-                <h2>!!! CONFIDENTIAL INFORMATION !!!</h2>
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>
-                        <p>Ashley H <br>
-                            <a href="tel:19046798625">+1 (904) 679-8625</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p>Isabel L<br>
-                            <a href="tel:19046540715">+1 (904) 654-0715</a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <!-- Quick Links
-            <div class="sec quickLinks">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            -->
-            <div class="spoiler">
-                <h2><u>!!!SPOILERS ARE IMMINENT!!!</u></h2>
-                <h3>About Us</h3>
-                <p>Welcome to our Avengers database! <br>Here you'll find information about the main <i>movie</i> avengers <br> Please enjoy!</p>
-                <h3>References</h3>
-                <ul>
-                    <li>
-                        <p>
-                            <a href="https://www.marvel.com/disneyplus" target="_blank">Disney</a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <!-- Contact Info
-            <div class="sec contact ">
-                <h2>Contact Info</h2>
-                <ul class="info ">
-                    <li>
-                        <span><i class="fa fa-map-marker " aria-hidden="true "></i>
-                    </span>
-                        <span>123 Street
-                      <br>Jax, Fl 12345,
-                      <br>US
-                    </span>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-phone " aria-hidden="true "></i>
-                  </span>
-                        <p>
-                            <a href="tel:19042407130 ">+1 (904) 123-4567</a>
-                            <br>
-                            <a href="tel.11234567890 ">+1 (123) 456-7890</a>
-
-                        </p>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-envelope " aria-hidden="true "></i>
-                </span>
-                        <p>
-                            <a href="mailto:amarqueztavera@yahoo.com ">email@domain.com</a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            -->
-            <div class="caution ">
-                <h2>!!! PROCEED WITH CAUTION !!!</h2>
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>
-                        <p>Abby W<br>
-                            <a href="tel:19043429546 ">+1 (904) 342-9546</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p>Andrea M<br>
-                            <a href="tel:19042407130 ">+1 (904) 240-7130</a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <div class="copyrightText ">
-        <p>Thank You from Citi</p>
-    </div>
-    <!-- Footer Ends Here -->
 </body>
 
 </html>
