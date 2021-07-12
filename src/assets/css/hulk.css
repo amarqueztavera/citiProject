@@ -234,7 +234,7 @@ input[type=text]:focus {
 /* left container */
 
 .menu-box {
-    height: 542px;
+    height: 662px;
 }
 
 .menu-box .titular {
@@ -290,7 +290,7 @@ input[type=text]:focus {
 }
 
 .donut-chart-block {
-    height: 310px;
+    height: 260px;
 }
 
 .donut-chart-block .titular {
@@ -333,7 +333,7 @@ input[type=text]:focus {
 }
 
 .weather {
-    height: 310px;
+    height: 270px;
 }
 
 .weather .titular {
@@ -354,7 +354,7 @@ input[type=text]:focus {
 }
 
 .tweet.first {
-    height: 110px;
+    height: 130px;
     border-bottom: 1px solid #1f253d;
 }
 
