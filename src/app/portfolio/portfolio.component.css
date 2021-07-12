@@ -1,4 +1,4 @@
-/*nav starts*/
+/*nav starts*/ 
 * {
     margin: 0px;
     padding: 0px;
@@ -189,13 +189,6 @@ body{
 
 /*end of nav*/
 
-body{
-    background-color: #101010;
-    color: aliceblue;
-    width:100%;
-        height:auto;
-        padding:1%;
-}
 
 /*This is a comment for css*/
 .Isabel p{
