@@ -318,7 +318,7 @@ input[type=text]:focus {
 }
 
 .profile {
-    height: 300px;
+    height: 305px;
 }
 
 .user-name {
@@ -354,7 +354,7 @@ input[type=text]:focus {
 }
 
 .tweet.first {
-    height: 130px;
+    height: 110px;
     border-bottom: 1px solid #1f253d;
 }
 
