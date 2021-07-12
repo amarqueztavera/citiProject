@@ -191,8 +191,15 @@ body{
 
 /*end of nav*/
 
+.text {
+    text-align: left;
+}
 
-/*This is a comment for css*/
+.textbox {
+    padding-left: 300px;
+    width: 800px;
+}
+
 .Isabel p{
     font-size: 20px;
 }
@@ -204,6 +211,7 @@ body{
     margin-left:2%;
    float: left; 
    height:200px;
+   padding-left: 150px;
    } 
   /* The .container height is the space between pics*/ 
    .container1 {
