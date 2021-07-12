@@ -234,7 +234,7 @@ input[type=text]:focus {
 /* left container */
 
 .menu-box {
-    height: 662px;
+    height: 542px;
 }
 
 .menu-box .titular {
@@ -290,7 +290,7 @@ input[type=text]:focus {
 }
 
 .donut-chart-block {
-    height: 260px;
+    height: 310px;
 }
 
 .donut-chart-block .titular {
@@ -333,7 +333,7 @@ input[type=text]:focus {
 }
 
 .weather {
-    height: 270px;
+    height: 310px;
 }
 
 .weather .titular {
@@ -341,7 +341,7 @@ input[type=text]:focus {
 }
 
 .tweets {
-    height: 390px;
+    height: 380px;
 }
 
 .tweets .titular {
@@ -354,12 +354,12 @@ input[type=text]:focus {
 }
 
 .tweet.first {
-    height: 130px;
+    height: 110px;
     border-bottom: 1px solid #1f253d;
 }
 
 .tweet.second {
-    height: 100px;
+    height: 90px;
     border-bottom: 1px solid #1f253d;
 }
 
