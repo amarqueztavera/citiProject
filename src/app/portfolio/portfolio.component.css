@@ -1,4 +1,4 @@
-/*nav starts*/
+/*nav starts*/ 
 * {
     margin: 0px;
     padding: 0px;
@@ -31,7 +31,7 @@ nav {
 }
 
 .logo {
-    color: rgb(38, 100, 100);
+    color: rgb(84, 143, 143);
     text-decoration: uppercase;
     letter-spacing: 5px;
     display: flex;
@@ -172,6 +172,8 @@ nav a:hover {
     -o-transform: rotate(45deg) translate(-5px, 6px);
 }
 
+/*nav ends*/
+
 .Isabel{
     text-align: right;
     margin-left:2%;
@@ -180,48 +182,69 @@ nav a:hover {
     width:40px; 
 }
 body{
-    background-color: #101010;
+    background-color:#101010;
     color: aliceblue;
     width:100%;
        height:auto;
        padding:1%;
 }
 
-/*end of nav*/
 
-body{
-    background-color: #101010;
-    color: aliceblue;
-    width:100%;
-        height:auto;
-        padding:1%;
+.text {
+    text-align: left;
 }
 
-/*This is a comment for css*/
+.textbox {
+    padding-left: 300px;
+    width: 800px;
+}
+
 .Isabel p{
     font-size: 20px;
 }
-.Isabel img{
-    height: 250px; 
-}
+
 
 .iconDetails {
     margin-left:2%;
    float: left; 
    height:200px;
+   padding-left: 150px;
    } 
-  /* The .container height is the space between pics*/ 
+
    .container1 {
+  /* The .container height is the space between pics*/ 
        width: 80%;
        height: 300px;
        padding:10%;
+       padding-top: 50px;
        text-align: right;
     }
+    
+    .container2 {
+        height: 300px;
+        padding:10%;
+        text-align: right;
+     }
 
+     
+     .container3 {
+       height: 300px;
+       padding:10%;
+       text-align: right;
+     }
+     
+     .container4 {
+       height: 300px;
+       padding:10%;
+       text-align: right;
+     }
+
+    
     .container2 {
         width: 80%;
         height: 300px;
         padding: 10%;
+        padding-top: 30px;
         text-align: right;
     }
 
@@ -229,6 +252,7 @@ body{
         width: 80%;
         height: 300px;
         padding: 10%;
+        padding-top: 30px;
         text-align: right;
     }
 
@@ -236,6 +260,7 @@ body{
         width: 80%;
         height: 300px;
         padding: 10%;
+        padding-top: 30px;
         text-align: right;
     }
 
@@ -244,6 +269,8 @@ body{
         padding-top: 5%;
         font-size: 20px;
     }
+    
+    /*footer css*/
     footer {
         display: flex;
         justify-content: space-between;
@@ -499,3 +526,4 @@ body{
     .footer-container {
         height: fit-content;
     }
+/*end of footer css*/
