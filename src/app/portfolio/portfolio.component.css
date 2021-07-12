@@ -189,6 +189,14 @@ body{
 
 /*end of nav*/
 
+body{
+    background-color: #101010;
+    color: aliceblue;
+    width:100%;
+        height:auto;
+        padding:1%;
+}
+
 /*This is a comment for css*/
 .Isabel p{
     font-size: 20px;
@@ -203,15 +211,39 @@ body{
    height:200px;
    } 
   /* The .container height is the space between pics*/ 
-   .container2 {
-       width:100%;
+   .container1 {
+       width: 80%;
        height: 300px;
-       padding:1%;
-       text-align: center;
+       padding:10%;
+       text-align: right;
     }
 
+    .container2 {
+        width: 80%;
+        height: 300px;
+        padding: 10%;
+        text-align: right;
+    }
 
+    .container3 {
+        width: 80%;
+        height: 300px;
+        padding: 10%;
+        text-align: right;
+    }
 
+    .container4 {
+        width: 80%;
+        height: 300px;
+        padding: 10%;
+        text-align: right;
+    }
+
+    .container5 {
+        text-align: center;
+        padding-top: 5%;
+        font-size: 20px;
+    }
     footer {
         display: flex;
         justify-content: space-between;
