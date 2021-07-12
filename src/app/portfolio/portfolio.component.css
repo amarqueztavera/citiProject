@@ -1,4 +1,4 @@
-/*nav starts*/
+/*nav starts*/ 
 * {
     margin: 0px;
     padding: 0px;
@@ -172,6 +172,8 @@ nav a:hover {
     -o-transform: rotate(45deg) translate(-5px, 6px);
 }
 
+/*nav ends*/
+
 .Isabel{
     text-align: right;
     margin-left:2%;
@@ -188,15 +190,15 @@ body{
 }
 
 
-body{
-    background-color: #101010;
-    color: aliceblue;
-    width:100%;
-        height:auto;
-        padding:1%;
+.text {
+    text-align: left;
 }
 
-/*This is a comment for css*/
+.textbox {
+    padding-left: 300px;
+    width: 800px;
+}
+
 .Isabel p{
     font-size: 20px;
 }
@@ -206,6 +208,7 @@ body{
     margin-left:2%;
    float: left; 
    height:200px;
+   padding-left: 150px;
    } 
 
    .container1 {
@@ -262,6 +265,8 @@ body{
         padding-top: 5%;
         font-size: 20px;
     }
+    
+    /*footer css*/
     footer {
         display: flex;
         justify-content: space-between;
@@ -517,3 +522,4 @@ body{
     .footer-container {
         height: fit-content;
     }
+/*end of footer css*/
