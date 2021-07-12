@@ -216,33 +216,15 @@ body{
        width: 80%;
        height: 300px;
        padding:10%;
+       padding-top: 50px;
        text-align: right;
     }
-    
-    .container2 {
-        height: 300px;
-        padding:10%;
-        text-align: right;
-     }
-
-     
-     .container3 {
-       height: 300px;
-       padding:10%;
-       text-align: right;
-     }
-     
-     .container4 {
-       height: 300px;
-       padding:10%;
-       text-align: right;
-     }
-
     
     .container2 {
         width: 80%;
         height: 300px;
         padding: 10%;
+        padding-top: 30px;
         text-align: right;
     }
 
@@ -250,6 +232,7 @@ body{
         width: 80%;
         height: 300px;
         padding: 10%;
+        padding-top: 30px;
         text-align: right;
     }
 
@@ -257,6 +240,7 @@ body{
         width: 80%;
         height: 300px;
         padding: 10%;
+        padding-top: 30px;
         text-align: right;
     }
 
