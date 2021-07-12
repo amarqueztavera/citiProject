@@ -341,7 +341,7 @@ input[type=text]:focus {
 }
 
 .tweets {
-    height: 390px;
+    height: 380px;
 }
 
 .tweets .titular {
@@ -359,7 +359,7 @@ input[type=text]:focus {
 }
 
 .tweet.second {
-    height: 100px;
+    height: 90px;
     border-bottom: 1px solid #1f253d;
 }
 
