@@ -172,8 +172,10 @@ nav a:hover {
     -o-transform: rotate(45deg) translate(-5px, 6px);
 }
 
+/*nav ends*/
+
 .Isabel{
-    text-align: right;
+    text-align: left;
     margin-left:2%;
     float:left; 
     height:40px;
@@ -238,6 +240,7 @@ body{
         font-size: 20px;
     }
     
+    /*footer css*/
     footer {
         display: flex;
         justify-content: space-between;
@@ -493,3 +496,4 @@ body{
     .footer-container {
         height: fit-content;
     }
+/*end of footer css*/
